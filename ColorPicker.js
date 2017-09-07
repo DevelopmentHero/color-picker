@@ -3,6 +3,7 @@
  * Initializes a new instance of the ColorPicker class.
  * @class Represents a visual control for picking colors.
  * @param {Color} InitialColor Initializes the ColorPicker with the specified color.
+ * @property {HTMLElement} Control Gets the underlying DOMNode.
  * @property {Color} Color Gets or sets the current picked color of the ColorPicker.
  * @author Kerry Holz <k.holz@artforge.eu>.
  * @version 1.0.0.
