@@ -1,0 +1,100 @@
+.colorpicker{
+    width: 360px;
+    height: 240px;
+    margin-left: 20px;
+}
+.colorpicker > .saturationlightness{
+    float: left;
+    margin-bottom: 5px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+.colorpicker > .saturationlightness > .indicator{
+    position: absolute;
+    cursor: crosshair;
+    height: 1px;
+    width: 1px;
+    padding: 4px;
+    margin: -5px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    top: 0px;
+    left: 0px;
+}
+.colorpicker > .saturationlightness > .indicator:hover{
+    border-color: #aaa;
+}
+.colorpicker > .saturationlightness > .canvas{
+    width: 200px;
+    height: 200px;
+    cursor: crosshair;
+}
+.colorpicker > .selection{
+    float: left;
+    width:calc(100% - 200px);
+    height: calc(100% - 40px);
+}
+.colorpicker > .selection > .canvas{
+    float: left;
+    width:calc(100% - 10px);
+    margin: 4px;
+    height: 15px;
+    border: solid 1px #777;
+}
+.colorpicker > .selection > .values{
+    float: left;
+    width: 100% ;
+    list-style: none;
+    height: calc(100% - 15px);
+    margin: 0px;
+    padding: 0px;
+}
+.colorpicker > .selection > .values > .row{
+    width: 100%;
+    height: 25px;
+}
+.colorpicker > .selection > .values > .row > .label{
+    width: 20px;
+    float: left;
+    text-align: center;
+}
+.colorpicker > .selection > .values > .row > .textbox{
+    width: calc(100% - 30px);
+    float: right;
+}
+.colorpicker > .hue{
+    float: left;
+    margin-top: 5px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.colorpicker > .hue > .indicator{
+    position: absolute;
+    cursor: pointer;
+    height: 20px;
+    width: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    left: 0px;
+}
+.colorpicker > .hue > .indicator:after, .colorpicker > .hue > .indicator:before {
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    height: 14px;
+}
+.colorpicker > .hue > .indicator:before {
+    border-top-color: #000;
+    border-width: 6px;
+    margin-left: -6px;
+    top: -6px;
+}
+.colorpicker > .hue > .indicator:after {
+    border-bottom-color:  #000;
+    border-width: 6px;
+    margin-left: -6px;
+}
